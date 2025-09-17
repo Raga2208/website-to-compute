@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Puisi Rahasia Bu Tika</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(45deg, #fce4ec, #f3e5f5);
+      text-align: center;
+      padding-top: 5%;
+    }
+    .container {
+      max-width: 650px;
+      background: #fff;
+      padding: 30px;
+      margin: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    }
+    input, button {
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+    }
+    button {
+      background: #ff80ab;
+      color: white;
+      cursor: pointer;
+    }
+    .puisi {
+      white-space: pre-wrap;
+      text-align: left;
+      margin-top: 20px;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🔒 Masukkan Password untuk baca puisinya</h2>
+    <input type="password" id="pwd" placeholder="Password">
+    <button onclick="cek()">Buka</button>
+
+    <div id="konten" style="display:none;">
+      <h3>✨🌸 Puisi Alay untuk Bu Tika 🌸✨</h3>
+      <div class="puisi">
+✨🌸 Sinar ilmu darimu jatuh bagai hujan inspirasi 🌸✨  
+Kata-katamu lurus seperti panah ⚡  
+Menusuk malas yang kadang singgah 💫  
+Engkau bimbing kami sampai mimpi berwarna 🎨💖  
+Menyalakan api semangat dalam dada kowek 🔥💎  
+
+Kadang caramu tegas, kadang penuh tawa 😎😂  
+Tapi semua itu bikin langkah kami lebih percaya 💃  
+Setiap tugas yang kau titipkan diam-diam jadi bekal 📚  
+Untuk melangkah lebih jauh, tak cuma sekadar soal 🚀✨  
+
+💌 Terima kasih atas semua bimbingan 💌  
+Atas waktu dan tenaga yang kau curahkan 🌈  
+Dan meski yang katanya *se cool* itu 😏✨  
+Harus merangkai kata lembut seperti ini, jujur terasa aneh dan gak banget 🙈💫  
+Namun demi Bu Tika (gak sih demi nilai juga sedikit 🤭)  
+Bu Tika itu guru yang tidak template seperti npc 🎮💫 dan sangat menginspirasi 💕  
+
+🌷 Semoga langkah Ibu selalu dipeluk bahagia 🌷  
+Dan setiap ilmu yang Ibu tanam tumbuh jadi cerita indah selamanya 🌟📖  
+Dalam setiap senyum dan langkah kecil kami nanti ✨  
+Nama Ibu terselip, jadi bagian dari perjalanan ini 💖🚀
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function cek(){
+      const pw = document.getElementById("pwd").value;
+      if(pw === "huft"){   // password baru
+        document.getElementById("konten").style.display = "block";
+      }else{
+        alert("Password salah, coba lagi ya!");
+      }
+    }
+  </script>
+</body>
+</html>
